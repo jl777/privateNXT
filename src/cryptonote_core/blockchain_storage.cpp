@@ -1373,7 +1373,7 @@ bool blockchain_storage::pushBlock(const block& blockData, block_verification_co
   }
 
   uint64_t base_reward = 0;
-  uint64_t already_generated_coins = (1 || m_blocks.size()) ? m_blocks.back().already_generated_coins : 0;
+  uint64_t already_generated_coins = (m_blocks.size()) ? m_blocks.back().already_generated_coins : 0;
   if (!validate_miner_transaction(blockData, cumulative_block_size, fee_summary, base_reward, already_generated_coins)) {
     LOG_PRINT_L0("Block " << blockHash << " has invalid miner transaction");
     bvc.m_verifivation_failed = true;
