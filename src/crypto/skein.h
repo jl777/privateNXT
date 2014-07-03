@@ -39,7 +39,7 @@ HashReturn;
 
 typedef size_t   DataLength;                /* bit count  type */
 typedef u08b_t   BitSequence;               /* bit stream type */
-
+#define SKEIN_256_NIST_MAX_HASH_BITS (0)
 /* "all-in-one" call */
 HashReturn skein_hash(int hashbitlen,   const BitSequence *data, 
                       DataLength databitlen,  BitSequence *hashval);
