@@ -9,7 +9,7 @@
 #define CRYPTONOTE_MAX_TX_SIZE                          1000000000
 #define CRYPTONOTE_PUBLIC_ADDRESS_TEXTBLOB_VER          0
 //TODO Define the first letter of your currency address
-#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX        "pNXT"
+#define CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX        22   // 'P'
 //TODO Choose maturity period for your currency
 #define CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW            13
 #define CURRENT_TRANSACTION_VERSION                     1
