@@ -14,7 +14,7 @@ using namespace epee;
 
 namespace cryptonote
 {
-  //---------------------------------------------------------------
+  //---------------------------------------------------------------gen
   void get_transaction_prefix_hash(const transaction_prefix& tx, crypto::hash& h)
   {
     std::ostringstream s;
@@ -634,7 +634,7 @@ namespace cryptonote
 
     //hard code coinbase tx in genesis block, because "true" generating tx use random, but genesis should be always the same
     //TODO After you obtain hash of the genesis block put it here and recompile sources!
-    std::string genesis_coinbase_tx_hex = "010d01ff0001c0b2cd3b029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101fbdf1653d169277c099f39ee04d257dafaa3d688ff45bf6a2bb01feacee81d85";
+    std::string genesis_coinbase_tx_hex = "010d01ff000180d0dbc3f402029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210122aca7ffc30cab740f9f67fc079dde9cf0300f67c276efc17b01b7a3235500ec";
 
     blobdata tx_bl;
     string_tools::parse_hexstr_to_binbuff(genesis_coinbase_tx_hex, tx_bl);
