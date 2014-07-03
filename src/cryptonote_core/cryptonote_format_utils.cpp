@@ -629,8 +629,7 @@ namespace cryptonote
     std::vector<size_t> sz;
     construct_miner_tx(0, 0, 0, 0, 0, ac, bl.miner_tx); // zero fee in genesis
     blobdata txb = tx_to_blob(bl.miner_tx);
-    std::string hex_tx_represent = string_tools::buff_to_hex_nodelimer(txb);
-    std::cout << "Genesis coinbase tx hex: " << hex_to_represent << std::endl;
+    std::cout << "Genesis coinbase tx hex: " << string_tools::buff_to_hex_nodelimer(txb) << std::endl;
     
 
     //hard code coinbase tx in genesis block, because "true" generating tx use random, but genesis should be always the same
