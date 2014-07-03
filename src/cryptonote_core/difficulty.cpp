@@ -74,7 +74,7 @@ namespace cryptonote {
 
     size_t length = timestamps.size();
     assert(length == cumulative_difficulties.size());
-    if (length <= 1) {
+    if (1 || length <= 1) {
       return 1;
     }
     static_assert(DIFFICULTY_WINDOW >= 2, "Window is too small");
